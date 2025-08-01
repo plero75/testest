@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -5,9 +6,48 @@
     <link rel="icon" type="image/svg+xml" href="/testest/assets/icon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard Vincennes</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: system-ui, sans-serif;
+        background: #f0f4f8;
+        color: #222;
+      }
+      header {
+        background-color: #003366;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+      main {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        max-width: 900px;
+        margin: auto;
+      }
+      .module {
+        background: white;
+        border-radius: 8px;
+        padding: 1rem;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
+    <header>
+      <h1>Dashboard Vincennes</h1>
+    </header>
+    <main id="root">
+      <div class="module">🕐 <strong>Date et heure :</strong> <span id="datetime"></span></div>
+      <div class="module">🚆 <strong>RER A – Joinville :</strong> 4 prochains trains dans chaque sens...</div>
+      <div class="module">🚌 <strong>Bus 77 / 201 :</strong> Prochains passages à Hippodrome et École du Breuil...</div>
+      <div class="module">🌤 <strong>Météo locale :</strong> en cours...</div>
+      <div class="module">🚲 <strong>Stations Vélib :</strong> disponibilité en direct...</div>
+      <div class="module">🏇 <strong>Courses du jour :</strong> à Vincennes...</div>
+      <div class="module">📻 <strong>France Info :</strong> dernières actus...</div>
+    </main>
     <script type="module" src="/testest/assets/index.js"></script>
   </body>
 </html>
