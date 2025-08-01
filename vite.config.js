@@ -1,1 +1,3 @@
-export default { base: '/testOOK/' };
+export default {
+  base: '/testest/',
+}
